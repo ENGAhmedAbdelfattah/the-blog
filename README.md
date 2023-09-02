@@ -6,6 +6,10 @@ Blog is an assessment app from Owais Capital
 - Title:  `The-Blog`
 - Author:  `Ahmed Mahmoud Abdelfattah`
 
+## ▶️ Hosted Site
+- Hosted Site where you can view the live version of the assessment:
+   [The Blog](https://the-blog-4iadi2jro-engahmedabdelfattah.vercel.app)
+
 ## 💻 Install
 - I did was start with a fresh Create Next App instance to use the lasted version of Next v. (13.4.12)
 - the commends for install next
