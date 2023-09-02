@@ -1,0 +1,56 @@
+.ul-paginate {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #aeaeae;
+  margin-top: 15px;
+  padding: 10px 3px;
+  position: relative;
+}
+
+.li-paginate {
+  cursor: pointer;
+}
+
+.a-paginate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  @media (max-width: 767.98px){
+    width: 28px;
+    height: 28px
+  }
+}
+
+.li-active-paginate {
+  background-color: var(--main_color);
+  border-radius: 5px;
+  color: var(--background-color)
+}
+
+.li-previous-paginate {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  a::before {
+    content: "🡨 Previous";
+    @media (max-width: 767.98px){
+      content: "🡨";
+    }
+  }
+}
+
+.li-next-paginate {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  a::after {
+    content: "Next 🡪";
+    @media (max-width: 767.98px){
+      content: "🡪";
+    }
+  }
+}

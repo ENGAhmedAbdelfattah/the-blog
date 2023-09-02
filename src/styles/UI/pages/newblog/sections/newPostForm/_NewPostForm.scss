@@ -1,0 +1,60 @@
+section.new-post-form {
+  h1 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 30px 0;
+  }
+
+  div.post-form {
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      div.box {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        position: relative;
+        label {
+          font-size: 20px;
+          font-weight: 500;
+        }
+        input {
+          background-color: var(--bg-gray);
+          padding: 15px;
+          font-size: 18px;
+          border-radius: 8px;
+          color: #000;
+        }
+      }
+
+      button {
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 8px;
+      }
+      div.form-btns {
+        display: flex;
+        gap: 20px;
+        margin: 10px 0 30px;
+        button.cancel-btn {
+          background-color: #fff;
+          margin-right: auto;
+          border: 1px solid var(--main_color);
+          color: #000;
+        }
+        button.archef-btn {
+          background-color: var(--bg-purple);
+          border: 1px solid var(--purple);
+          color: #000;
+        }
+        button.publish-btn {
+          background-color: var(--purple-dark);
+          &:disabled {
+            background-color: var(--bg-purple);
+          }
+        }
+      }
+    }
+  }
+}

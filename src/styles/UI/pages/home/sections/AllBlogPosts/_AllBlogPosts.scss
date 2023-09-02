@@ -1,0 +1,16 @@
+@forward "./blocks/Pagination";
+
+section.All-blog-posts {
+  div.container {
+    margin-top: 50px;
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    div.items-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+    }
+  }
+}

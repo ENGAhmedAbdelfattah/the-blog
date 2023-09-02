@@ -1,0 +1,25 @@
+div.theme-box {
+  display: flex;
+  border: 2px solid #777;
+  border-radius: 29px;
+  gap: 15px;
+  padding: 5px 10px;
+  align-items: center;
+  position: relative;
+  background-color: var(--main_color, #3a3d4c);
+  color: var(--background-color, white);
+  width: fit-content;
+  margin: auto;
+  div.icon-cover {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--background-color, white);
+    left: 10px;
+    transition: left 0.3s;
+    &.dark {
+      left: calc(10px + 15px + 25px);
+    }
+  }
+}

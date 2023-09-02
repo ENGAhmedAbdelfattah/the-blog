@@ -1,0 +1,117 @@
+header {
+  height: 80px;
+  border-bottom: 2px solid var(--header-border-color);
+  background-color: var(--background-color);
+  position: relative;
+  div.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    // padding: 0 30px;
+    @media (max-width: 991.98px) {
+      gap: 0px;
+      // padding: 0 15px;
+    }
+    p.brand-hand {
+      a {
+        font-weight: 500;
+        font-size: 19px;
+      }
+    }
+    nav {
+      flex: 1;
+      ul.link-list {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 26px;
+        font-size: 15px;
+        display: flex;
+        background-color: var(--background-color);
+        @media (max-width: 767.98px) {
+          // display: none;
+          height: 0px;
+          overflow: hidden;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 25px;
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          transform: translate(-50%, 100%);
+          width: 100%;
+          box-shadow: #67749744 0px 3px 5px;
+          transition: height 0.7s, border-bottom-left-radius 0.7s,
+            border-bottom-right-radius 0.7s;
+          &.active {
+            height: calc(100vh - 80px);
+          }
+        }
+        li {
+          &:last-child {
+            color: var(--paragraph_color);
+          }
+          @media (max-width: 767.98px) {
+            &:first-child {
+              margin-top: 10px;
+            }
+            &:last-child {
+              margin-bottom: 10px;
+              color: var(--main_color_Two);
+            }
+            width: 100%;
+            text-align: center;
+          }
+          a.link {
+            font-size: 17px;
+            font-weight: 500;
+            transition: 0.3s;
+            color: var(--main_color_Two);
+            &:hover {
+              font-weight: 500;
+              color: var(--main_color);
+            }
+            &.active {
+              font-weight: 700;
+              color: var(--main_color);
+            }
+          }
+          &.new-blog {
+            display: flex;
+            background-color: var(--purple, #9978e1);
+            border-radius: 8px;
+            padding: 5px 16px;
+            gap: 5px;
+            width: fit-content;
+            a {
+              display: flex;
+              height: 35px;
+              align-items: center;
+              text-align: center;
+              font-size: 16px;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+
+    div.header-end {
+      display: flex;
+      align-items: center;
+      gap: 47px;
+      @media (max-width: 767.98px) {
+        gap: 11px;
+      }
+
+      .menu-icon {
+        display: none;
+        @media (max-width: 767.98px) {
+          display: block;
+        }
+      }
+    }
+  }
+}

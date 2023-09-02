@@ -1,0 +1,8 @@
+@forward "./sections/PostASide/PostASide";
+@forward "./sections/PostInfo/PostInfo";
+@forward "./sections/PostComments/PostComments";
+
+.post-details-top {
+  display: flex;
+  gap: 20px;
+}

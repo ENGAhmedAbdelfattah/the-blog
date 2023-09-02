@@ -1,0 +1,11 @@
+.post-aside {
+  @media (max-width: 767.98px) {
+    display: none;
+  }
+  .items-box-details-page {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    width: 300px;
+    gap: 30px;
+  }
+}

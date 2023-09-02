@@ -1,0 +1,39 @@
+div.item-comment {
+  display: flex;
+  gap: 10px;
+  align-items: start;
+  div.item-comment-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #d5dbee;
+    color: var(--purple);
+    flex-shrink: 0;
+    font-weight: 700;
+  }
+
+  div.item-comment-right {
+    div.item-comment-top {
+      display: flex;
+      gap: 10px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1;
+      div.item-comment-author {
+        line-height: inherit;
+      }
+
+      div.item-comment-email {
+        color: var(--purple-dark);
+        line-height: inherit;
+      }
+    }
+
+    div.item-comment-bottom {
+      color: var(--gray);
+    }
+  }
+}

@@ -1,0 +1,79 @@
+@use "./vendors/normalize";
+@use "./base/base";
+@use "./myFramework/myFramework";
+@use "./myFramework/keyframs" as *;
+@use "./UI/layout";
+@use "./helpers/variable";
+
+// light
+$main_color-light: #1a1a1a;
+$background-color-light: #ffffff;
+$purple: #9978e1;
+$purple-dark: #6941C6;
+$bg-purple: #f9f5ff;
+$sky: #3538cd;
+$bg-sky: #eef4ff;
+$gray: #667085;
+$bg-gray: #f9f5ff;
+$green-title: #21d188;
+$green: #027a48;
+$bg-green: #ecfdf3;
+$pink: #c11574;
+$bg-pink: #fdf2fa;
+// dark
+$main-color-dark: #fff;
+$background-color-dark: #090d1f;
+
+:root {
+  --main_color: #{$main-color-light};
+  --background-color: #{$background-color-light};
+  --purple: #{$purple};
+  --purple-dark :#{$purple-dark};
+  --bg-purple: #{$bg-purple};
+  --sky: #{$sky};
+  --bg-sky: #{$bg-sky};
+  --gray: #{$gray};
+  --bg-gray: #{$bg-gray};
+  --green-title: #{$green-title};
+  --green: #{$green};
+  --bg-green: #{$bg-green};
+  --pink: #{$pink};
+  --bg-pink: #{$bg-pink};
+}
+
+html {
+  &.dark {
+    body {
+      --main_color: #{$main-color-dark};
+      --background-color: #{$background-color-dark};
+    }
+  }
+  color: var(--main_color);
+  background-color: var(--background-color);
+  transition: color 0.3s, background-color 0.3s;
+}
+
+body {
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
+}
+.for-test-image {
+  display: block;
+  display: none;
+  margin-top: -127px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 98%;
+  filter: opacity(80%);
+  // -webkit-filter: opacity(80%);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  img {
+    display: block;
+    width: 100%;
+  }
+  z-index: -1;
+}

@@ -1,0 +1,17 @@
+@forward "./units/CommentItem";
+
+section.post-comments {
+  background-color: var(--bg-sky);
+  padding: 43px;
+  h2.comments-counts {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  div.comments {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}

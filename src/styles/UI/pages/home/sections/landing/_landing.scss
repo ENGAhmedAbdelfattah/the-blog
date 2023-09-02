@@ -1,0 +1,26 @@
+section.home-landing {
+  margin-top: 70px;
+  @media (max-width: 767.98px){
+    margin-top: 25px;
+  }
+  div.container {
+    h1 {
+      border-block: 2px solid var(--main_color);
+      text-align: center;
+      font-size: 223px;
+
+      font-weight: 700;
+      color: var(--main_color);
+      line-height: 1;
+      @media (max-width: 767.98px){
+        font-size: 60px;
+      }
+      @media (min-width: 767.98px) and (max-width: 991.98px){
+        font-size: 139px;
+      }
+      @media (min-width: 991.98px) and (max-width: 1199.98px){
+        font-size: 184px;
+      }
+    }
+  }
+}

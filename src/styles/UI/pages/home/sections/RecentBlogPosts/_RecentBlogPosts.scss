@@ -1,0 +1,14 @@
+@forward "./units/BlogPostsItem";
+section.recent-blog-posts {
+  margin-top: 50px;
+  div.container {
+    h2 {
+      margin-bottom: 20px;
+    }
+    div.items-box {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
