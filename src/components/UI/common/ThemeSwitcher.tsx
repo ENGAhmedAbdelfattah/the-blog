@@ -45,19 +45,8 @@ function ThemeSwitcher({ name }: props) {
           className={`icon-cover ${darkActive === "dark" ? "dark" : "light"}`}
         ></div>
       </div>
-      {/* {iconTheme} */}
     </>
   );
 }
 
 export default ThemeSwitcher;
-
-{
-  /*
-<select value={theme} onChange={e => setTheme(e.target.value)}>
-  <option value="system">System</option>
-  <option value="dark">Dark</option>
-  <option value="light">Light</option>
-</select>
-*/
-}
