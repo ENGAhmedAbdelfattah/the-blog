@@ -3,6 +3,7 @@ header {
   border-bottom: 2px solid var(--header-border-color);
   background-color: var(--background-color);
   position: relative;
+  z-index: 1000;
   div.container {
     display: flex;
     align-items: center;

@@ -1,10 +1,5 @@
 "use client";
-import {
-  Formik,
-  Form,
-  Field,
-  ErrorMessage,
-} from "formik";
+import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { ToastContainer, toast } from "react-toastify";
 import { useQuery, useQueryClient, useMutation } from "react-query";
@@ -13,7 +8,6 @@ import TextError from "@/components/UI/common/TextError";
 import { addPost } from "@/api/postsApi";
 
 function NewPostForm() {
-
   const queryClient = useQueryClient();
   const addPostMutation = useMutation(addPost, {
     onSuccess: () => {
@@ -37,14 +31,14 @@ function NewPostForm() {
       .min(50, "Content must be at least 50 characters"),
   });
 
-  const onSubmit = async(values: any, submitProps: any) => {
+  const onSubmit = async (values: any, submitProps: any) => {
     try {
       await addPostMutation.mutateAsync(values);
       toast.success("Form submitted successfully", {
         position: toast.POSITION.TOP_CENTER,
       });
     } catch (error: any) {
-      toast.error('Error: ' + error.message, {
+      toast.error("Error: " + error.message, {
         position: toast.POSITION.TOP_CENTER,
       });
     }
@@ -88,7 +82,7 @@ function NewPostForm() {
                 <div className="box post-content-box">
                   <label htmlFor="post-content">post content</label>
                   <Field
-                    type="text"
+                    type="textarea"
                     id="post-content"
                     name="postContent"
                     placeholder="Introduction"
